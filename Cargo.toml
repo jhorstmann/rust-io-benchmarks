@@ -1,0 +1,15 @@
+[package]
+name = "rust-io-benchmarks"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+
+[dev-dependencies]
+jemallocator = "0.5.0"
+jemalloc-sys = "0.5.0"
+criterion = "0.5.1"
+
+[[bench]]
+name = "readchunks"
+harness = false
